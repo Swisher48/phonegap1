@@ -11,17 +11,56 @@
 </head> 
 
 <body>
-	<div data-role="page" id="page1">
+	<div data-role="page" id="home">
 		<div data-role="header">
-			<h1>My First Page</h1>
+			<h1>Restaurant Page</h1>
 						
 		</div>
 		<div data-role="main" class="ui-content">
-			<h1>Hello World</h1>
+			<h1>This is the first navigation page</h1>
 			<p>Welcome to my first page</p>
 			<p>I like coding in jQuery Mobile</p>
-			<p><a href="#page2" data-transition="flip">Second Page</a></p>
-			<p><a href="#page3" data-rel="dialog">Open Third page as a Dialog</a></p>
+			
+			
+			<p><a href="#info" >Info</a></p>
+			<p><a href="#myinfo" >Developer Info</a></p>
+			<p><a href="#feedback" >Feedback</a></p>
+						
+			<div class="ui-grid-b" style="width:80%">
+				<div class="ui-block-a" style="height:100%">
+					<a href="#menu" >
+					<img style="height:100%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">	
+					</a>
+				</div>
+				<div class="ui-block-b" style="height:100%">
+					<a href="#recipe" >
+					<img style="height:100%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">	
+					</a>
+				</div>
+				<div class="ui-block-c" style="height:100%">
+					<a href="#info" >
+					<img style="height:100%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">	
+					</a>
+				</div>
+			</div>
+			<div class="ui-grid-b" style="width:80%">
+				<div class="ui-block-a" style="height:100%">
+					<a href="#info" >
+					<img style="height:100%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">	
+					</a>
+				</div>
+				<div class="ui-block-b" style="height:100%">
+					<a href="#myinfo" >
+					<img style="height:100%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">	
+					</a>
+				</div>
+				<div class="ui-block-c" style="height:100%">
+					<a href="#feedback" >
+					<img style="height:100%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">	
+					</a>
+				</div>
+			</div>
+		
 			
 		</div>
 		<div data-role="footer">
@@ -31,15 +70,15 @@
 	
 	</div>
 	
-	<div data-role="page" id="page2">
+	<div data-role="page" id="menu">
 		<div data-role="header">
-			<h1>My Second Page</h1>
+			<h1>Menu Page</h1>
 						
 		</div>
 		<div data-role="main" class="ui-content">
-			<h1>Hello World</h1>
-			<p>Welcome to my second page</p>
-			<a href="#page1">First Page</a>
+			<h1>Menu Page</h1>
+			<p>Menu</p>
+			<a href="#home">Go Home</a>
 			
 		</div>
 		<div data-role="footer">
@@ -49,21 +88,75 @@
 	
 	</div>
 	
-	<div data-role="page" id="page3">
+	<div data-role="page" id="recipe">
 		<div data-role="header">
-			<h1>My Third Page</h1>
+			<h1>Recipe Page</h1>
 						
 		</div>
 		<div data-role="main" class="ui-content">
-			<h1>Hello World</h1>
-			<p>Welcome to my Third Dialog page</p>
-			<a href="#page1">First Page</a>
+			<h1>Recipe Page</h1>
+			<p>recipe</p>
+			<a href="#home">Go Home</a>
 			
 		</div>
 		<div data-role="footer">
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
+	 </div>
 	 
+	 <div data-role="page" id="info">
+		<div data-role="header">
+			<h1>Restaurant Info</h1>
+						
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>Restaurant Info</h1>
+			<p>Restaurant Info</p>
+			<a href="#home">Go Home</a>
+			
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Steve Holmes 2015</h2>
+		
+		</div>
+	
+	</div>
+	
+	<div data-role="page" id="myinfo">
+		<div data-role="header">
+			<h1>Developer Info</h1>
+						
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>Developer Info</h1>
+			<p>Developer Info</p>
+			<a href="#home">Go Home</a>
+			
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Steve Holmes 2015</h2>
+		
+		</div>
+	
+	</div>
+	
+	<div data-role="page" id="feedback">
+		<div data-role="header">
+			<h1>Feedback</h1>
+						
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>Feedback</h1>
+			<p>Feedback</p>
+			<a href="#home">Go Home</a>
+			
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Steve Holmes 2015</h2>
+		
+		</div>
+	
+	</div>
 </body>
 </html>
