@@ -12,8 +12,8 @@
 </head> 
 
 <body>
-	<div data-role="page" id="home" data-theme="d">
-		<div data-role="header" data-theme="d">
+	<div data-role="page" id="home" >
+		<div data-role="header" >
 			
 			<h1>The Restaurant</h1>
 						
@@ -60,7 +60,7 @@
 		
 			
 		</div>
-		<div data-role="footer" data-theme="d">
+		<div data-role="footer" >
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
@@ -68,10 +68,8 @@
 	</div>
 	
 	<div data-role="page" id="menu">
-		<div data-role="header" data-theme="d"> 
-			<a href="index.html" data-icon="delete">Home</a>
-		
-			<h1>Menu Page</h1>
+		<div data-role="header" > 
+				<a href="#home" data-icon="home">Home</a> <h1>Menu</h1>
 						
 		</div>
 		<div data-role="main" class="ui-content">
@@ -81,14 +79,14 @@
 			<span class="ui-icon ui-icon-home ui-icon-shadow">&nbsp;</span>
 			
 		</div>
-		<div data-role="footer" data-theme="d">
+		<div data-role="footer" >
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
 	 </div>
 	
 	<div data-role="page" id="menuitems">
-		<div data-role="header" data-theme="d">
+		<div data-role="header" >
 			<h1>Menu Items Page</h1>
 						
 		</div>
@@ -121,7 +119,7 @@
 			<a href="#home">Go Home</a>
 			
 		</div>
-		<div data-role="footer" data-theme="d">
+		<div data-role="footer" >
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
@@ -129,7 +127,7 @@
 	</div>
 	
 	<div data-role="page" id="Menu">
-		<div data-role="header" data-theme="d">
+		<div data-role="header" >
 			<h1>Menu Page</h1>
 						
 		</div>
@@ -139,14 +137,14 @@
 			<a href="#home">Go Home</a>
 			
 		</div>
-		<div data-role="footer" data-theme="d">
+		<div data-role="footer" >
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
 	 </div>
 	
 	<div data-role="page" id="recipe">
-		<div data-role="header" data-theme="d">
+		<div data-role="header" >
 			<h1>Recipe Page</h1>
 						
 		</div>
@@ -156,14 +154,14 @@
 			<a href="#home">Go Home</a>
 			
 		</div>
-		<div data-role="footer" data-theme="d">
+		<div data-role="footer" >
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
 	 </div>
 	 
 	 <div data-role="page" id="info">
-		<div data-role="header" data-theme="d">
+		<div data-role="header" >
 			<h1>Restaurant Info</h1>
 						
 		</div>
@@ -173,7 +171,7 @@
 			<a href="#home">Go Home</a>
 			
 		</div>
-		<div data-role="footer" data-theme="d">
+		<div data-role="footer" >
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
@@ -181,7 +179,7 @@
 	</div>
 	
 	<div data-role="page" id="myinfo">
-		<div data-role="header" data-theme="d">
+		<div data-role="header" >
 			<h1>Developer Info</h1>
 						
 		</div>
@@ -191,7 +189,7 @@
 			<a href="#home">Go Home</a>
 			
 		</div>
-		<div data-role="footer" data-theme="d">
+		<div data-role="footer" >
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
@@ -199,17 +197,25 @@
 	</div>
 	
 	<div data-role="page" id="feedback">
-		<div data-role="header" data-theme="d">
+		<div data-role="header" >
 			<h1>Feedback</h1>
 						
 		</div>
 		<div data-role="main" class="ui-content">
-			<h1>Feedback</h1>
-			<p>Feedback</p>
+				<form>
+					<label>Customer Name</label>
+					<textarea name="customerName" id="customerName"></textarea>
+					<label>Contact Info</label>
+					<textarea name="contactinfo" id="contactinfo"></textarea>
+					<label>Comments</label>
+					<textarea name="comments" id="comments"></textarea>
+					<input type="submit" name="send" id="send"></input>			
+				</form>
+				
 			<a href="#home">Go Home</a>
 			
 		</div>
-		<div data-role="footer" data-theme="d">
+		<div data-role="footer" >
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
@@ -217,17 +223,22 @@
 	</div>
 	
 	<div data-role="page" id="aboutus">
-		<div data-role="header" data-theme="d">
+		<div data-role="header" >
 			<h1>About Us</h1>
 						
 		</div>
 		<div data-role="main" class="ui-content">
 			<h1>About Us</h1>
-			<p>About Us</p>
+			<p>Owners Joe Blogs and Terry Toweling have worked together since 1901 and form an amazing team each side of the kitchen pass.</p>
+
+			<p>Restauranteur Joe Blogs, who hails from Merrytown previously ran the much loved and award winning Goku Restaurant in the Fallwell suburb of Ascot.</p>
+			<p>Ever gracious in his role as host, Terry ensures professional and attentive service in a relaxed and friendly atmosphere.</p>
+			<p>Spanish born chef Joe has won over the tastebuds of diners and critics alike with his exciting and innovative approach to asian inspired greek cuisine.</p>
+			<p>Together with a talented team of chefs, you will be served modern asian inspired greek food at its best.</p>
 			<a href="#home">Go Home</a>
 			
 		</div>
-		<div data-role="footer" data-theme="d">
+		<div data-role="footer" >
 			<h2>&copy; Steve Holmes 2015</h2>
 		
 		</div>
