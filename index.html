@@ -14,17 +14,18 @@
 </head>
 
 <body>
+	<!--Create fist main navigation Page-->
 	<div data-role="page" id="home" data-theme="d" >
-		<div data-role="header" >
-			
-			<h1>The Restaurant</h1>
-						
+		<!-- Page Title in Header-->
+		<div data-role="header" >			
+			<h1>The Restaurant</h1>						
 		</div>
+		
+		<!-- main page content in 2X2 grid blocks to navigate the page-->
 		<div data-role="main" class="ui-content" >
-		<img style="width:90%;" src="Images/restaurantlogo.png" alt="Logo" is="image">
-	
-			
-		<div class="ui-grid-a" style="width:100%">
+			<img style="width:90%;" src="Images/restaurantlogo.png" alt="Logo" is="image">	
+			<!--first grid of 2 items-->
+			<div class="ui-grid-a" style="width:100%">
 				<div class="ui-block-a" >
 					<a href="#menu" >
 					<img style="width:100%;" src="Images/Menublue.png" is="image">	
@@ -34,10 +35,11 @@
 					<a href="#info" >
 					<img style="width:100%;" src="Images/Contactblue.png" is="image">	
 					</a>
-				</div>
-				
-		</div>
-		<div class="ui-grid-a" style="width:100%">
+				</div>				
+			</div>
+			
+			<!--Second navigation Grid-->
+			<div class="ui-grid-a" style="width:100%">
 				<div class="ui-block-a" >
 					<a href="#feedback" >
 					<img style="width:100%;" src="Images/Feedbackblue.png" is="image" alt="Menu">	
@@ -47,27 +49,31 @@
 					<a href="#myinfo" >
 					<img style="width:100%;" src="Images/Developerblue.png" is="image">	
 					</a>
-				</div>
-				
-		</div>
-		
-			
+				</div>				
+			</div>		
+		<!--Footer and image copyright information-->
+		<p>
+		This is a non commercial site setup for study<br>
+		All food images from http://freefoodphotos.com CC-BY <br>
+		All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+		Recipes from www.taste.com.au<br>
+		</p>
 		</div>
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2>
-		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>
-	
 	</div>
 	
+	<!--Input Menu page for collapsible lists to reference Rscipes-->
 	<div data-role="page" id="menu" data-theme="d">
+		<!--Menu Header with return to main menu Home button-->
 		<div data-role="header" > 
-				<a href="#home" data-icon="home">Home</a> <h1>Menu</h1>
-						
+				<a href="#home" data-icon="home">Home</a> <h1>Menu</h1>						
 		</div>
+		
+		<!--Input main page content andTitle with heading image-->
 		<div data-role="main" class="ui-content">
-			<img style="width:30%;" src="Images/Menublue.png" is="image">
-			
+			<img style="width:30%;" src="Images/Menublue.png" is="image">			
 			<!-- input data for collapsibe lists to display catagorised meal information. All have links through to individual recipe pages-->
 			<div data-role="collapsible">
 				<h1><b>Snacks</b></h1>
@@ -88,8 +94,7 @@
 								<img style="width:100%;" src="Images/spaghetti_on_toast.jpg" is="image"> <h2>Spaghetti On Toast</h2>
 							</a>
 						</li>
-					</ul>
-				
+					</ul>				
 			</div>
 			
 			<!-- input data for collapsibe lists to display catagorised meal information. All have links through to individual recipe pages-->
@@ -112,8 +117,7 @@
 								<img style="width:100%;" src="Images/bento_box.jpg" is="image"> <h2>Mexican Bento Box</h2>
 							</a>
 						</li>
-					</ul>
-				
+					</ul>				
 			</div>
 			
 			<!-- input data for collapsibe lists to display catagorised meal information. All have links through to individual recipe pages-->
@@ -136,8 +140,7 @@
 								<img style="width:100%;" src="Images/nicoise_salad.jpg" is="image"> <h2>Nicoise Salad</h2>
 							</a>
 						</li>
-					</ul>
-				
+					</ul>				
 			</div>
 
 			<!-- input data for collapsibe lists to display catagorised meal information. All have links through to individual recipe pages-->
@@ -160,16 +163,22 @@
 								<img style="width:100%;" src="Images/cheesecake_with_raspberries.jpg" is="image"> <h2>Cheese Cake with Raspberries</h2>
 							</a>
 						</li>
-					</ul>
-				
-			</div>
-			
+					</ul>				
+			</div>			
+		<!--Footer and image copyright information-->
+		<p>
+		This is a non commercial site setup for study<br>
+		All food images from http://freefoodphotos.com CC-BY <br>
+		All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+		Recipes from www.taste.com.au<br>
+		</p>
 		</div>
-		<div data-role="footer">
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY</h5>
 		
+		<div data-role="footer" >
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>
 	</div>
+	
 	 <!-- Input all data for the Snacks-->
 	<div data-role="page" id="snack1" data-theme="d">
 	<!-- Input the Header information of the page with home return-->	
@@ -178,8 +187,7 @@
 			<h1>Pistachio Nuts</h1>
 		</div>
 		<!--Input the content of the page displaying Recpie information-->
-		<div data-role="main" class="ui-content">
-			
+		<div data-role="main" class="ui-content">			
 			<img style="height:50%;" src="Images\pistachios.jpg" is="image">
 			<h3>Method</h3>
 			<ol>
@@ -192,21 +200,28 @@
 				<li>They taste amazing in baking recipes when they are toasted.</li>
 				<li>You can just munch on them though. Perfectly acceptable.</li>
 				<li>Serve with a big old Grab Some Nuts Day smile!</li>
-				<p> Recipe from http://www.cravingsofalunatic.com/2014/08/how-to-toast-pistachios.html</p>
-						
-		</div>
+			</ol>
 		<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipe from http://www.cravingsofalunatic.com/2014/08/how-to-toast-pistachios.html<br>
+			</p>
+		</div>
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Icons from https://pixabay.com/en/users/geralt-9301/</h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	
-	 <div data-role="page" id="snack2" data-theme="d">
-	 <!-- Input the Header information of the page with home return-->	 
+	<div data-role="page" id="snack2" data-theme="d">
+	<!-- Input the Header information of the page with home return-->	 
 		<div data-role="header">
 			<a href="#home" data-icon="home">Home</a>
 			<h1>Autumn Fruits</h1>
 		</div>
+		
 		<!--Input the content of the page displaying Recpie information-->
 		<div data-role="main" class="ui-content">
 			
@@ -216,22 +231,29 @@
 				<li>Place strawberries, blueberries, Cointreau and icing sugar in a bowl. Toss well to combine. Set aside at room temperature for 30 minutes. Strawberries will soften slightly and become syrupy.</li>
 				<li>Place strawberries, blueberries and juices in a bowl. Serve with cream.</li>
 			</ol>			
-		</div>
 		<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
+		</div>
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5> 		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 
 	<div data-role="page" id="snack3" data-theme="d">
-	 <!-- Input the Header information of the page with home return-->	 
+	<!-- Input the Header information of the page with home return-->	 
 		<div data-role="header">
 			<a href="#home" data-icon="home">Home</a>
 			<h1>Fruit Bowl</h1>
 		</div>
+		
 		<!--Input the content of the page displaying Recpie information-->
-		<div data-role="main" class="ui-content">
-			
+		<div data-role="main" class="ui-content">			
 			<img style="height:50%;" src="Images\fruit_bowl.jpg" is="image">
 			<h3>Recipe</h3>
 			<ol>
@@ -241,10 +263,17 @@
 				<li>Store in well ventialted cool area of home</li>
 				<li>Enjoy!!!</li>
 			</ol>					
-		</div>
 		<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
+		</div>
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	
@@ -266,10 +295,17 @@
 				<li>Pour spaghetti over Toast</li>
 				<li>Enjoy!!!</li>
 			</ol>
-		</div>
 		<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
+		</div>
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	
@@ -283,16 +319,23 @@
 		<div data-role="main" class="ui-content">
 			
 			<img style="height:50%;" src="Images\bento.jpg" is="image">
-			<h3>Recipe</h3>
+			<h3>Recipe Image is for another style of Bento</h3>
 			<ol>
 				<li>Make Meatloaf sandwich: Preheat oven to 200C/180C fan-forced. Line a baking tray with sides with baking paper. Combine mince, garlic, zucchini, egg, Worcestershire sauce, parsley, breadcrumbs and 1 tablespoon barbecue sauce in a bowl. Season with salt and pepper. Shape into a 6cm x 15cm log and place on prepared tray. Bake for 30 minutes or until cooked though. Allow to cool. Cut into 6 slices. Top roll bases with lettuce, relish, meatloaf and remaining barbecue sauce. Top with roll tops. Wrap in plastic wrap. Refrigerate until required.</li>
 				<li>Make Fruit and yoghurt salad: Divide yoghurt between two 3/4-cup capacity airtight containers with lids. Top with raspberries, blueberries and coconut chips. Cover with lids. Refrigerate until required.</li>
 				<li>Place sandwiches, fruit salad, beetroot dip, celery and cooked corn in lunchboxes. Refrigerate until required.		</li>				
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	
@@ -312,10 +355,17 @@
 				<li>Combine five-spice, garlic, salt and pepper in a small bowl. Rub salt mixture into pork skin and scoring. Place pork, rind side up in a roasting tray and cook for 30 mins or until skin starts to blister and crackle. Reduce oven temperature to 200C and cook for 2 hrs or until just cooked through. Remove from oven, cover with foil and rest for 15 mins.</li>
 				<li>Boil, steam or microwave Chinese broccoli until just tender. Drain. Add to pan with pork, turning to coat in juices. Serve with chilli, coriander and steamed rice.	</li>	
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	
@@ -337,11 +387,18 @@
 				<li>Heat remaining 1 tbs peanut oil in a frypan over high heat. Add pork and cook for 3-4 minutes each side until caramelised and cooked through. Remove from pan and rest for 2 minutes, then thinly slice.
 				<li>Divide soup among bowls, top with pork, then garnish with shredded spring onion and chilli, if using.					
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
-		</div>	
+			<h2>&copy; Steve Holmes 2015</h2>	
+		</div>
 	</div>
 	
 	<div data-role="page" id="asian4" data-theme="d">
@@ -360,11 +417,18 @@
 				<li>Make Corn chips: Line a baking tray with baking paper. Place tortillas on tray. Spray with oil. Sprinkle with seasoning. Bake for 4 to 5 minutes or until golden. Cool on tray.</li>
 				<li>Mash avocado and lime juice in a bowl. Combine tomato, beans and cheese in a small bowl. Pack avocado mixture, tomato mixture, 6 meatballs, corn chips and lime into each of 2 lunchboxes. Refrigerate until required.</li>						
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BYRecipe from www.taste.com.au</h5>		
-		</div>	
+			<h2>&copy; Steve Holmes 2015</h2>	
+		</div>
 	</div>
 	
 	<div data-role="page" id="main1" data-theme="d">
@@ -386,10 +450,17 @@
 				<li>For the filling, heat the oil in a large frypan, add the onion and cook over medium heat for 2-3 minutes or until softened. Add the bacon and cook for a further 5 minutes or until bacon is crispy. Set aside to cool. Once cool, sprinkle the bacon mixture over the pastry base, followed by the grated cheese.</li>
 				<li>Place the eggs in a large bowl and lightly whisk, add the cream and milk, and continue whisking until well combined. Season with salt and pepper, then carefully pour the egg mixture over the bacon. Return the quiche to the oven for 25 minutes or until golden and set.	</li>				
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	
@@ -411,10 +482,17 @@
 				<li>Add the egg mixture to the pan and swirl to coat the bottom of the pan and cover the green shallots. Sprinkle with the parsley. Cover with a lid or a piece of foil and cook over medium heat for 2 minutes or until just set. Shake the pan to ensure the omelette has not stuck to the base.</li>
 				<li>Spoon the mushrooms over one half of the omelette and gently shake the omelette onto a serving plate, flipping the other half over to cover the mushrooms. Serve immediately with bread and a crisp green salad, if desired.	</li>				
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	
@@ -435,10 +513,17 @@
 				<li>Set sausages aside and keep warm. Add tomatoes to frying pan, cut-side down. Cook over medium heat for 2 minutes. Turn and drizzle cut side with balsamic vinegar. Cook a further 2 minutes. Turn again and cook for 1 minute.</li>
 				<li>Serve sausages with tomatoes and polenta.			</li>		
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	
@@ -458,11 +543,18 @@
 			<li>Cook potatoes in a large saucepan of boiling water for 10 minutes or until just tender. Transfer to a large bowl. Add beans to pan. Cook for 2 to 3 minutes or until bright green and just tender. Drain. Refresh under cold water. Drain. Add beans to potato.</li>
 			<li>Add tuna, tomato, olives, lettuce, egg and anchovies (if using) to potato mixture. Add red wine dressing. Toss gently to combine. Season with salt and pepper. Serve.		</li>
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
-		</div>	
+			<h2>&copy; Steve Holmes 2015</h2>	
+		</div>
 	</div>
 	
 	<div data-role="page" id="dessert1" data-theme="d">
@@ -481,11 +573,18 @@
 				<li>Use your fingertips to rub the butter into the flour mixture until the mixture resembles fine breadcrumbs. Stir in the walnuts.</li>
 				<li>Spoon the apple into a 1.5L (6-cup) capacity ovenproof dish. Scatter the walnut mixture evenly over the apples. Bake in oven for 20-25 minutes or until golden. Spoon the apple crumble into serving bowls. Serve with ice-cream.	</li>					
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
+			
 		</div>
-		<!--Footer and image copyright information-->
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
-		</div>	
+			<h2>&copy; Steve Holmes 2015</h2>	
+		</div>
 	</div>
 	
 	<div data-role="page" id="dessert2" data-theme="d">
@@ -504,11 +603,18 @@
 				<li>Meanwhile, place the almonds in a small saucepan over medium heat. Cook, stirring, for 2 minutes or until toasted and aromatic. Remove from the heat and set aside for 5 minutes to cool.</li>
 				<li>To serve, divide strawberries evenly among serving bowls. Top with a dollop of cream and sprinkle with almonds.		</li>
 			</ol>				
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
-		</div>	
+			<h2>&copy; Steve Holmes 2015</h2>	
+		</div>
 	</div>
 	
 	<div data-role="page" id="dessert3" data-theme="d">
@@ -530,10 +636,17 @@
 				<li>Use a large serrated knife to split the cooled cake into 3 even layers. Place the bottom layer on a serving plate. Spread with half the buttercream. Continue layering with remaining cake and buttercream.</li>
 				<li>To make the coffee icing, dissolve the coffee in a small bowl with 2 teaspoons hot water. Stir until coffee dissolves. Add the icing sugar. Stir until smooth yet slightly runny, adding a little extra water if necessary. Spread the icing over the top of the cake. Decorate with walnuts.	</li>					
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au</h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	
@@ -553,50 +666,63 @@
 				<li>Using an electric mixer, beat cream cheese, cream and sugar until smooth and the sugar has dissolved. Whisk gelatine with the boiling water until the gelatine has dissolved. Add to the cream cheese mixture and beat to combine.</li>
 				<li>Fold half the raspberries through cream cheese mixture and spoon onto the base. Top with remaining raspberries. Cover with plastic wrap and refrigerate for 4 hours or until set.	</li>		
 			</ol>
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<!--Footer and image copyright information-->
+		
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2><h5>All food images from http://freefoodphotos.com CC-BY Recipe from www.taste.com.au<h5>		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>	
 	</div>
 	<!-- New page for business contact and location information -->		 
 	<div data-role="page" id="info" data-theme="d">
-		
+		<!-- Input the Header information of the page with home return-->	
 		<div data-role="header" >
 			<a href="#home" data-icon="home">Home</a>
 			<h1>Contact Us</h1>
 						
 		</div>
+		<!--Input main content with extermnal NAvigation and Tel links-->
 		<div data-role="main" class="ui-content">
 		<img style="width:30%;" src="Images/Contactblue.png" is="image">
 			<h2>Phone</h2>
 			<p>Please feel free to call during business hours 0408615141</p>
-			<a href="tel:0408615141" data-role="button">Tap to call</a>
-		
-			
+			<a href="tel:0408615141" data-role="button">Tap to call</a>			
 			<h2>Address</h2>
 			<p>17 Fenwick St Geelong 3220</p>
-			<a href="https://www.google.com.au/maps/place/17+Fenwick+St,+Geelong+VIC+3220/@-38.1490299,144.3543002,17z/data=!3m1!4b1!4m2!3m1!1s0x6ad41405b2cfaa59:0x50242e708bde7772" data-role="button">Tap to navigate</a>
-					
-			
+			<a href="https://www.google.com.au/maps/place/17+Fenwick+St,+Geelong+VIC+3220/@-38.1490299,144.3543002,17z/data=!3m1!4b1!4m2!3m1!1s0x6ad41405b2cfaa59:0x50242e708bde7772" data-role="button">Tap to navigate</a>			
 			<a href="https://www.google.com.au/maps/place/17+Fenwick+St,+Geelong+VIC+3220/@-38.1490299,144.3543002,17z/data=!3m1!4b1!4m2!3m1!1s0x6ad41405b2cfaa59:0x50242e708bde7772" >
-					<img style="width:50%;"  src="Images/location.png" is="image">	
+				<img style="width:50%;"  src="Images/location.png" is="image">	
 			</a>
 						
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2>
 		
+		<div data-role="footer" >
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>
 	
 	</div>
 	<!-- New Page for Developer Informaton-->
 	<div data-role="page" id="myinfo" data-theme="d">
+		<!-- Input the Header information of the page with home return-->	
 		<div data-role="header" >
 			<a href="#home" data-icon="home">Home</a>
 			<h1>Developer Info</h1>
 						
 		</div>
+		<!--Simple page to Display Student Details-->
 		<div data-role="main" class="ui-content">
 			<img style="width:30%;" src="Images/Developerblue.png" is="image">
 			<h1>Developer Info</h1>
@@ -608,20 +734,30 @@
 				<li>email: sholm@deakin.edu.au</li>
 			</ul>			
 			<h2>		
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
+			
 		</div>
 		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2>
-		
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>
 	
 	</div>
 	
+	<!--Input Feedback page with basic form capture to retieve data from customers-->
 	<div data-role="page" id="feedback" data-theme="d">
+		<!-- Input the Header information of the page with home return-->	
 		<div data-role="header" >
 			<a href="#home" data-icon="home">Home</a>
 			<h1>Feedback</h1>
 						
 		</div>
+		<!--Basic Forms to capture data from customers-->
 		<div data-role="main" class="ui-content">
 		<img style="width:30%;" src="Images/Feedbackblue.png" is="image">
 				<form>
@@ -637,10 +773,17 @@
 				
 			<a href="#home">Go Home</a>
 			
+			<!--Footer and image copyright information-->
+			<p>
+			This is a non commercial site setup for study<br>
+			All food images from http://freefoodphotos.com CC-BY <br>
+			All icon images from https://pixabay.com/en/users/geralt-9301/ <br>
+			Recipes from www.taste.com.au<br>
+			</p>
 		</div>
-		<div data-role="footer" >
-			<h2>&copy; Steve Holmes 2015</h2>
 		
+		<div data-role="footer" >
+			<h2>&copy; Steve Holmes 2015</h2>	
 		</div>
 	
 	</div>
